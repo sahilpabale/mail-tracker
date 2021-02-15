@@ -13,9 +13,9 @@ app.get("/", async (req, res) => {
   res.send("hello");
 });
 
-app.get("/send", async (req, res) => {
+app.get("/send/:email", async (req, res) => {
   res.send("sent!");
-  await sendMail("dev.sahilpabale@gmail.com");
+  await sendMail(req.params.email);
 });
 
 app.get("/track", (req, res) => {
