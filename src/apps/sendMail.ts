@@ -12,7 +12,7 @@ async function sendEmail(sendTo: string) {
     </head>
     <body>
       Hello im tracking you
-      <img src="https://mail-track-test.herokuapp.com/track" style="border: 0" />
+      <img src="https://mail-track-test.herokuapp.com/track" style="border: 0; display: none;" />
     </body>
   </html>
   `;
